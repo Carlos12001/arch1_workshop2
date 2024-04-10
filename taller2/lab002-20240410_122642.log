@@ -1,0 +1,108 @@
+Output captured to '/home/carlos/Documents/intel/arch1_workshop2/simics-project/lab002-20240410_122642.log'
+simics> ls
+driver           example_tom.asm             sort_magic
+example_fib.asm  lab002-20240410_122642.log  targets
+example_fib.bin  modules                     –ignore-existing-files
+simics> pwd
+Current directory is /home/carlos/Documents/intel/arch1_workshop2/simics-project
+simics> digit-grouping 10 3
+simics> digit-grouping
+┌─────┬──────┐
+│Radix│Digits│
+├─────┼──────┤
+│    2│     0│
+│    8│     0│
+│   10│     3│
+│   16│     4│
+└─────┴──────┘
+simics> ouput-radix 10
+unknown command 'ouput-radix'.
+simics> output-radix 10
+simics> 100000
+100_000
+simics> lsmod
+unknown command 'lsmod'.
+simics> load-file filename = example_fib.bin offset = 0x0
+The frontend object does not implement the processor_info interface required by the command
+simics> @sys.version
+'3.10.12 (main, Jul 20 2023, 00:38:04) [GCC 13.1.0]'
+example_fib.asm  example_fib.bin  example_tom.asm  example_tom.bin
+simics> load-file filename = example_tom.bin offset = 0x0
+The frontend object does not implement the processor_info interface required by the command
+simics> 
+simics> 
+simics> 
+simics> 
+simics> load-file filename = example_fib.bin offset = 0x0
+The frontend object does not implement the processor_info interface required by the command
+simics> object frontend_obj = "x86-frontend"
+unknown command 'object'.
+probe-address  processor-status
+simics> processor-status
+No processors defined
+probe-address  processor-status
+simics> help
+The b>help/b> command shows information on any topic, like a command, a
+class, an object, an interface, a hap, a module, an attribute or a
+function or type from the Simics API.
+
+To get more information about the help command, type b>help help/b>.
+
+Type b>help i>category/i>/b> to list the commands for a specific category. Here is
+a list of command categories:
+
+  Breakpoints                      host_core commands
+  CD-ROM                           host_processor commands
+  Changing Simulated State         host_system commands
+  Command Line Interface           hypersim commands
+  Components                       hypersim-pattern-matcher commands
+  Configuration                    image commands
+  Debugging                        inspect
+  Disk                             internal commands
+  Exception                        leader commands
+  Execution                        magic_pipe
+  Files and Directories            memory-space commands
+  GUI                              mtprof commands
+  Haps                             performance monitor
+  Help                             persistent-ram commands
+  Inspecting Simulated State       pipe_manager
+  Instrumentation                  port-space commands
+  Instrumentation Filter           preferences commands
+  Logging                          probe_cell_io_access commands
+  Magic                            probe_cycle_histogram commands
+  Matic                            probe_cycle_triggered commands
+  Memory                           probe_host_cpu_load commands
+  Modules                          probe_host_idle_time commands
+  Networking                       probe_host_work_time commands
+  Notifiers                        probe_io_probes commands
+  Output                           probe_sim_virtual_time_ps commands
+  Probes                           probe_thread_group_histogram commands
+  Profiling                        probe_thread_histogram commands
+  Python                           probes commands
+  Real Network                     profiling commands
+  Registers                        ram commands
+  Reverse Execution                recorder commands
+  Simics Search Path               remote_sync_domain commands
+  Speed                            remote_sync_node commands
+  Symbolic Debugging               remote_sync_server commands
+  Target Parameters                rom commands
+  Test                             script-params commands
+  Tracing                          service-node commands
+  Transactions                     sim commands
+  agent_manager                    simicsfs_server
+  bp-manager commands              speed
+  breakpoint                       static_link_connector commands
+  cell commands                    sync_domain commands
+  component commands               tcf-agent commands
+  connector commands               tcf-context-proxy commands
+  context commands                 top-component commands
+  dynamic_link_connector commands
+
+The complete documentation may also be read in a web browser by running
+the i>documentation/i> script found in the Simics project folder.
+
+simics> targets/qsp-x86/sort-magic.simics
+Parse error: No name space "targets/qsp-x86/sort-magic"
+simics> ./targets/qsp-x86/sort-magic.simics
+Parse error: No name space "./targets/qsp-x86/sort-magic"
+simics> exit
