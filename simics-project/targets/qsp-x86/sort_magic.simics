@@ -1,5 +1,5 @@
 #NOTICE: You need to point this to the image craff, preferably the one specified in this repositories README : qsp-driver-support.craff
-$disk0_image=
+$disk0_image= "/home/carlos/Documents/intel/qsp-driver-support.craff"
 run-command-file "%script%/firststeps.simics"
 script-branch {
     #wait until login
